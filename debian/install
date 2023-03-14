@@ -1,0 +1,6 @@
+# See dh_install(1)
+
+maratona-wait/*.desktop usr/share/applications
+maratona-wait/*.html usr/share/maratona-wait
+maratona-wait/*.css usr/share/maratona-wait
+maratona-wait/*.js usr/share/maratona-wait

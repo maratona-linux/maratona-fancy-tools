@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Maratona pre-contest Warning Web Application
+Comment=Wait page to use before the contest.
+GenericName=Maratona pre-contest
+Exec=epiphany --application-mode=maratona-wait.desktop /usr/share/maratona-wait/gradiente6.html
+StartupWMClass=maratona-wait
+Type=Application
+StartupNotify=true
+MimeType=text/plain;
