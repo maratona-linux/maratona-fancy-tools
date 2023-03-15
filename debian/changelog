@@ -1,3 +1,9 @@
+maratona-fancy-tools (20230314.1-1) jammy; urgency=medium
+
+  * Replace epiphany by gjs
+
+ -- Davi Antônio da Silva Santos <antoniossdavi@gmail.com>  Tue, 14 Mar 2023 21:34:28 -0300
+
 maratona-fancy-tools (20230314-1) jammy; urgency=low
 
   * Initial release.
