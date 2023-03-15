@@ -1,0 +1,60 @@
+#!/usr/bin/env gjs
+
+// Ensure proper versions are used
+// TODO: GTK4, to be enabled when present in more distros!
+// imports.gi.versions.Gtk     = '4.0'
+// imports.gi.versions.WebKit2 = '5.0'
+
+(function() {
+    this.__defineGetter__("__FILE__", function() {
+        return (new Error).stack.split("\n")[2].split("@")[1].split(":")[0];
+    });
+})();
+
+// GTK3
+imports.gi.versions.Gtk = '3.0';
+imports.gi.versions.WebKit2 = '4.0';
+
+// Imports
+const ByteArray = imports.byteArray;
+const GTK = imports.gi.Gtk;
+const GLib = imports.gi.GLib;
+const WebKit = imports.gi.WebKit2;
+
+// Set up application
+const App = new GTK.Application({ application_id: 'org.gtk.MaratonaWait' });
+
+App.connect('activate', () => {
+    let window = new GTK.ApplicationWindow({ application: App });
+    let webview = new WebKit.WebView();
+
+    // Settings
+    let settings = webview.get_settings();
+    settings.enable_write_console_messages_to_stdout = true;
+
+    // Get path to web entrypoint
+    let current = GLib.get_current_dir();
+    let basename = GLib.path_get_dirname(__FILE__);
+    let path = GLib.build_pathv('/', [ current, basename, 'web', 'index.html' ]);
+    let index = 'file:///usr/share/maratona-wait/gradiente6.html';
+
+    // Load the web entrypoint
+    webview.load_uri(index);
+
+    // Set up application properties
+    window.set_title('Hello World');
+
+    //window.set_default_size(400, 200);
+    window.fullscreen();
+
+    // TODO: This is the GTK4 version
+    // window.set_child(webview);
+    // window.present();
+
+    // GTK3
+    window.add(webview);
+    window.show_all();
+})
+
+// Start everything up
+App.run([]);

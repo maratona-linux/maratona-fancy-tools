@@ -11,7 +11,8 @@ Vcs-Browser: https://github.com/maratona-linux/maratona-fancy-tools
 Package: maratona-fancy-tools
 Architecture: any
 Multi-Arch: foreign
-Depends: epiphany-browser, ${misc:Depends}, ${shlibs:Depends}
+Depends: gjs, gir1.2-webkit2-4.0, gir1.2-gtk-3.0, gir1.2-glib-2.0,
+ ${misc:Depends}, ${shlibs:Depends}
 Description: página de espera do Maratona-Linux
  Página de espera, que informa o usuário que a competição está sendo preparada,
  e que este não deve usar o computador.
