@@ -1,3 +1,9 @@
+maratona-fancy-tools (20231006-1) jammy; urgency=medium
+
+  * Add dependency on ffmpeg
+
+ -- Davi Antônio da Silva Santos <antoniossdavi@gmail.com>  Fri, 06 Oct 2023 17:01:49 -0300
+
 maratona-fancy-tools (20230314.1-1) jammy; urgency=medium
 
   * Replace epiphany by gjs
