@@ -1,3 +1,9 @@
+maratona-fancy-tools (20240530-1) UNRELEASED; urgency=medium
+
+  * Update copyright file
+
+ -- Davi Antônio da Silva Santos <antoniossdavi@gmail.com>  Thu, 30 May 2024 20:13:06 -0300
+
 maratona-fancy-tools (20231006-1) jammy; urgency=medium
 
   * Add dependency on ffmpeg
