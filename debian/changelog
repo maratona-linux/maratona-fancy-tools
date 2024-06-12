@@ -1,8 +1,9 @@
-maratona-fancy-tools (20240530-1) UNRELEASED; urgency=medium
+maratona-fancy-tools (20240530-1) noble; urgency=medium
 
   * Update copyright file
+  * Update gir1.2-webkit2 version
 
- -- Davi Antônio da Silva Santos <antoniossdavi@gmail.com>  Thu, 30 May 2024 20:13:06 -0300
+ -- Davi Antônio da Silva Santos <antoniossdavi@gmail.com>  Tue, 11 Jun 2024 21:05:41 -0300
 
 maratona-fancy-tools (20231006-1) jammy; urgency=medium
 
